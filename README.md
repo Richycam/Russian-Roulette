@@ -20,7 +20,7 @@ If the user doesn't want to play, it prints "smart move".
 Outputs
 The function doesn't return any output. It only prints messages indicating whether the user wins or loses.
 
-#To run the game 
+# To run the game 
 
 open a linux terminal and run with python3
 
